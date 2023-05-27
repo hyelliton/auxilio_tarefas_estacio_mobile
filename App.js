@@ -8,13 +8,14 @@ import FazerLogin from './Telas/FazerLogin';
 import CriarConta from './Telas/CriarConta';
 import Comecar from './Telas/VamosComecar';
 import Home from './Telas/Conta/index';
-
+import Recupere from './Telas/EsqueciSenha/';
 
 const Drawer = createDrawerNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
+
       <Drawer.Navigator initialRouteName='Inicio'>
         
         <Drawer.Screen
@@ -63,7 +64,19 @@ export default function App() {
           headerTintColor: 'white',
           headerShown: false
         }}/>
+
+        <Drawer.Screen 
+        name='Recupere'
+        component={Recupere}
+        options={{
+          title: 'Recupere',
+          headerStyle: {backgroundColor: '#B0C4DE'},
+          headerTintColor: 'white',
+          headerShown: false
+        }}/>
+
       </Drawer.Navigator>
+
     </NavigationContainer>
   );
 }
