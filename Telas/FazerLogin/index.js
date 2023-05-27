@@ -55,31 +55,23 @@ export default function FazerLogin ({navigation}){
               </View>
             </View>
             
-            <TouchableOpacity 
-              onPress = {() => navigation.navigate('Conta')}
-              activeOpacity={0.5}>
-              <View>
-                <Text style={estilos.esqueceu}>Esqueceu a senha?</Text>
-              </View>
-            </TouchableOpacity>
-
             <View>
-              <Text style={estilos.naoTemConta}>
-               Não tem conta?
-              </Text>
-            </View>
-
               <TouchableOpacity 
-                onPress = {() => navigation.navigate('CriarConta')}
-                style={estilos.bottonCadastre}
+                onPress = {() => navigation.navigate('Recupere')}
                 activeOpacity={0.5}>
-                <View style={{ marginLeft: 10, marginTop: 5}}>
-                  <Text style={estilos.cadastre}>
-                    CADASTRE-SE!
-                  </Text>
-                </View>
-            
+                <Text style={estilos.esqueceu}>Esqueceu a senha?</Text>
               </TouchableOpacity>
+            </View>  
+
+            <View style={estilos.cadastre}>
+              <TouchableOpacity 
+              onPress = {() => navigation.navigate('CriarConta')}
+               activeOpacity={0.5}>
+              <Text style={estilos.naoTemConta}>
+               Não tem conta? CADASTRE-SE!
+              </Text>
+              </TouchableOpacity>
+            </View>
 
             <View style={estilos.botao}>
               <Button title=" LOGIN" color= '#B0C4DE'
@@ -109,7 +101,7 @@ const estilos = StyleSheet.create({
   },
   
   espaco:{
-    marginTop: 30,
+    marginTop: 'auto',
   },
 
   titulo1:{
@@ -138,7 +130,6 @@ const estilos = StyleSheet.create({
     backgroundColor: 'white',
     borderTopLeftRadius: 40,
     borderTopRightRadius: 40,
-    marginTop: 25,
     width: '100%',
     textAlign: 'center',
     justifyContent: 'center'
@@ -224,26 +215,19 @@ const estilos = StyleSheet.create({
 
  esqueceu:{
 
-    marginHorizontal: '62%',
+    marginHorizontal: '61%',
     marginTop: '-3%',
     width: '30%',
-    fontSize: 10,
+    fontSize: 12,
     fontWeight: 'bold',
-    justifyContent: 'center',
-    textAlign: 'center',
-    backgroundColor: '#F4F3F3',
     color: 'black'
 
   },
 
-  
-
   esqueci_senha:{
 
-    marginHorizontal: '15%',
     height: '80%',
     fontSize: 12,
-    justifyContent: 'center',
     textAlign: 'right',
     color: 'black'
 
@@ -251,8 +235,7 @@ const estilos = StyleSheet.create({
   
   naoTemConta:{
 
-    marginHorizontal: '15%',
-    marginLeft: 196,
+    marginLeft: 150,
     marginTop: 11,
     height: '80%',
     fontSize: 10,
@@ -260,26 +243,13 @@ const estilos = StyleSheet.create({
 
   },
 
-  bottonCadastre:{
-    position: 'absolute',
-    width: 270,
-    height: 120,
-    fontSize: 7,
-    justifyContent: 'center',
-    right: -145,
-    bottom: 90,
-    padding: 2
-    
-  },
-  
   cadastre:{
+    alignItems:'center',
+    
+    backgroundColor: 'blue'
 
-    marginTop: -5,
-    fontSize: 10,
-    fontWeight: 'bold',
-    color: 'black',
-    alignItems: 'flex-end'
 
+    
   },
   
   botao:{

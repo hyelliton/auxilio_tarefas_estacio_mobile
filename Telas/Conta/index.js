@@ -19,16 +19,19 @@ export default function Home({navigation}){
             
             <View style={estilos.janela}>
 
-                <View style={estilos.bordaDiaria}>
-                    <Image source={require('../Imagens/diarias.png' ) } 
-                    style={estilos.logoReturndiaria}></Image>
-                    <TouchableOpacity 
+                <TouchableOpacity 
                         onPress = {() => navigation.navigate('')}
                         style={estilos.bottonDiarias}
                         activeOpacity={0.5}>
+
+                    <View style={estilos.bordaDiaria}>
+                        <Image source={require('../Imagens/diarias.png' ) } 
+                        style={estilos.logoReturndiaria}></Image>
+                        
                         <Text style={estilos.diarias}>Diarias</Text>
-                    </TouchableOpacity>
-                </View>
+                        
+                    </View>
+                </TouchableOpacity>
 
                 <View style={estilos.bordaSemanal}>
                      <Image source={require('../Imagens/semanais.png' ) } 
