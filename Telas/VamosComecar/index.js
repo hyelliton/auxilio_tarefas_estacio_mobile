@@ -8,7 +8,7 @@ export default function Comecar({navigation}){
     <LinearGradient 
       style={{
       flex: 1}}
-      colors={['#9FB9FC', '#9FB9FC', '#9FB9FC']}>
+      colors={['#9FB9FC', '#FFF', '#9FB9FC']}>
         
       <View style={estilos.item_login}>
        <Image source={require('../Imagens/estacioTransparente.png' )} style={estilos.logo}></Image>
@@ -43,6 +43,7 @@ export default function Comecar({navigation}){
 const estilos = StyleSheet.create({
 
   janela:{
+    flex: 1,
     alignItems:'center',
     
   },

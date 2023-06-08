@@ -1,4 +1,4 @@
-import {View, Image, Text, StyleSheet, Button, SafeAreaView, TouchableOpacity, TextInput} from 'react-native'
+import {View, Image, Text, StyleSheet, Button, SafeAreaView, TouchableOpacity, TextInput,  KeyboardAvoidingView, ScrollView} from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient';
 
 export default function Recupere({navigation}){
@@ -6,7 +6,7 @@ export default function Recupere({navigation}){
 
     <LinearGradient
     style={{flex: 1}}
-    colors={['#9FB9FC', '#9FB9FC', '#9FB9FC']}>
+    colors={['#9FB9FC', '#FFF', '#9FB9FC']}>
     
         <View style={estilos.fundo}>
             <Image source={require('../Imagens/estacioTransparente.png' )} style={estilos.logo}></Image>
@@ -17,30 +17,37 @@ export default function Recupere({navigation}){
             </View>
                 
             <View style={estilos.janela}>
+                <KeyboardAvoidingView 
+                    keyboardVerticalOffset={-500}
+                    behavior="padding"
+                    style={{flex: 1}}> 
 
-                <View >
-                    <Text style={estilos.titulo}>
-                        PARA DEFINIR SUA SENHA, INFORME{'\n'}
-                        O E-MAIL CADASTRADO NA SUA{'\n'}
-                        CONTA E LHE ENVIAREMOS{'\n'}
-                        UM LINK COM AS INSTRUÇÕES.
-                    </Text>
-                </View>
+                    <ScrollView style={{flex: 1}}>
 
-                <View style={estilos.item_email}>
-                    <Text style={estilos.textEmail}>EMAIL:</Text>
-                    <TextInput style={estilos.textCampo} 
-                    placeholder={'Digite seu email'} ></TextInput>
-                </View>
-                
-                <TouchableOpacity 
-                    onPress = {() => navigation.navigate('cadastroDeConta')}
-                    style={estilos.bottonLogoStyle}
-                    activeOpacity={0.5}>
-                <Image source={require('../Imagens/logoReturn2.png' ) } 
-                style={estilos.  logoReturn}></Image>
-                </TouchableOpacity>
-                
+                        <View >
+                            <Text style={estilos.titulo}>
+                                PARA DEFINIR SUA SENHA, INFORME{'\n'}
+                                O E-MAIL CADASTRADO NA SUA{'\n'}
+                                CONTA E LHE ENVIAREMOS{'\n'}
+                                UM LINK COM AS INSTRUÇÕES.{'\n'}{'\n'}
+                            </Text>
+                        </View>
+
+                        <View style={estilos.item_email}>
+                            <Text style={estilos.textEmail}>EMAIL:</Text>
+                            <TextInput style={estilos.textCampo} 
+                            placeholder={'Digite seu email'} ></TextInput>
+                        </View>
+                        
+                        <TouchableOpacity 
+                            onPress = {() => navigation.navigate('cadastroDeConta')}
+                            style={estilos.bottonLogoStyle}
+                            activeOpacity={0.5}>
+                        <Image source={require('../Imagens/logoReturn2.png' ) } 
+                        style={estilos.  logoReturn}></Image>
+                        </TouchableOpacity>
+                    </ScrollView>
+                </KeyboardAvoidingView>
             </View>
         </View>
     </LinearGradient>
@@ -90,13 +97,12 @@ const estilos = StyleSheet.create({
         backgroundColor: 'white',
         borderTopLeftRadius: 40,
         borderTopRightRadius: 40,
-        width: '100%',
         justifyContent: 'center',
         
     },
 
     titulo: {
-        marginTop: -150,
+        marginTop: 80,
         marginLeft: 15,
         fontSize: 20,
         fontWeight: 'bold'

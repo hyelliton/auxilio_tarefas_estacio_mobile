@@ -7,7 +7,7 @@ export default function Home({navigation}){
       
     <LinearGradient
         style={{flex: 1}}
-        colors={['#9FB9FC', '#9FB9FC', '#9FB9FC']}>
+        colors={['#9FB9FC', '#FFF', '#9FB9FC']}>
 
         <View style={estilos.fundo}>
             <Image source={require('../Imagens/estacioTransparente.png' )} style={estilos.logo}></Image>
@@ -139,7 +139,6 @@ const estilos = StyleSheet.create({
         borderTopLeftRadius: 50,
         borderTopRightRadius: 50,
         marginTop: 50,
-        width: '100%',
         alignItems:'center',
         flexDirection: 'column'
     },
