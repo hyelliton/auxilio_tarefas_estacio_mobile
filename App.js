@@ -10,6 +10,11 @@ import Comecar from './Telas/VamosComecar';
 import Home from './Telas/Conta/index';
 import Recupere from './Telas/EsqueciSenha/';
 import Diarias from './Telas/AtivDiarias';
+import Relatorio from './Telas/relatorio';
+import Relatoriorealizado from './Telas/relatoriorealizado';
+import Adicaodeatividade from './Telas/adicaodeatividade';
+import Semanaisadicionadas from './Telas/semanaisadicionadas';
+import Conclusao from './Telas/conclusao';
 
 const Drawer = createDrawerNavigator();
 
@@ -45,6 +50,16 @@ export default function App() {
           headerTintColor: 'white',
           headerShown: false
         }}/>
+
+        <Drawer.Screen 
+        name='Adicaodeatividade'
+        component={Adicaodeatividade}
+        options={{
+          title: 'Adicaodeatividade',
+          headerStyle: {backgroundColor: '#B0C4DE'},
+          headerTintColor: 'white',
+          headerShown: false
+      }}/>
 
         <Drawer.Screen 
         name='Comecar'
@@ -85,6 +100,46 @@ export default function App() {
           headerTintColor: 'white',
           headerShown: false
         }}/>
+
+        <Drawer.Screen 
+        name='Relatorio'
+        component={Relatorio}
+        options={{
+          title: 'Relatorio',
+          headerStyle: {backgroundColor: '#B0C4DE'},
+          headerTintColor: 'white',
+          headerShown: false
+        }}/>
+
+        <Drawer.Screen 
+        name='Relatoriorealizado'
+        component={Relatoriorealizado}
+        options={{
+          title: 'Relatoriorealizado',
+          headerStyle: {backgroundColor: '#B0C4DE'},
+          headerTintColor: 'white',
+          headerShown: false
+        }}/>
+
+        <Drawer.Screen 
+        name='Semanaisadicionadas'
+        component={Semanaisadicionadas}
+        options={{
+          title: 'Semanaisadicionadas',
+          headerStyle: {backgroundColor: '#B0C4DE'},
+          headerTintColor: 'white',
+          headerShown: false
+      }}/>
+
+        <Drawer.Screen 
+        name='Conclusao'
+        component={Conclusao}
+        options={{
+          title: 'Conclusao',
+          headerStyle: {backgroundColor: '#B0C4DE'},
+          headerTintColor: 'white',
+          headerShown: false
+      }}/>
 
       </Drawer.Navigator>
 
