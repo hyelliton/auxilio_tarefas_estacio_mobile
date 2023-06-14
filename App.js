@@ -62,7 +62,7 @@ export default function App() {
           title: 'Home',
           headerStyle: {backgroundColor: '#B0C4DE'},
           headerTintColor: 'white',
-          headerShown: false
+          headerShown: true
         }}/>
 
         <Drawer.Screen 
