@@ -8,6 +8,7 @@ import FazerLogin from './Telas/FazerLogin';
 import CriarConta from './Telas/CriarConta';
 import Comecar from './Telas/VamosComecar';
 import Home from './Telas/Conta/index';
+import Homemenu from './Telas/homemenu';
 import Recupere from './Telas/EsqueciSenha/';
 import Diarias from './Telas/AtivDiarias';
 import Relatorio from './Telas/relatorio';
@@ -79,6 +80,16 @@ export default function App() {
           headerStyle: {backgroundColor: '#B0C4DE'},
           headerTintColor: 'white',
           headerShown: true
+        }}/>
+
+        <Drawer.Screen 
+        name='Homemenu'
+        component={Homemenu}
+        options={{
+          title: 'Homemenu',
+          headerStyle: {backgroundColor: '#B0C4DE'},
+          headerTintColor: 'white',
+          headerShown: false
         }}/>
 
         <Drawer.Screen 
