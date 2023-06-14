@@ -9,6 +9,7 @@ import CriarConta from './Telas/CriarConta';
 import Comecar from './Telas/VamosComecar';
 import Home from './Telas/Conta/index';
 import Recupere from './Telas/EsqueciSenha/';
+import Diarias from './Telas/AtivDiarias';
 
 const Drawer = createDrawerNavigator();
 
@@ -70,6 +71,16 @@ export default function App() {
         component={Recupere}
         options={{
           title: 'Recupere',
+          headerStyle: {backgroundColor: '#B0C4DE'},
+          headerTintColor: 'white',
+          headerShown: false
+        }}/>
+
+        <Drawer.Screen 
+        name='Diarias'
+        component={Diarias}
+        options={{
+          title: 'Diarias',
           headerStyle: {backgroundColor: '#B0C4DE'},
           headerTintColor: 'white',
           headerShown: false
