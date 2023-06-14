@@ -38,7 +38,7 @@ export default function Home({navigation}){
                      <Image source={require('../Imagens/semanais.png' ) } 
                         style={estilos.logoReturnsemanais}></Image>
                     <TouchableOpacity 
-                        onPress = {() => navigation.navigate('')}
+                        onPress = {() => navigation.navigate('Semanais')}
                         style={estilos.bottonSemanais}
                         activeOpacity={0.5}>
                         <Text style={estilos.semanais}>Semanais</Text>
@@ -50,7 +50,7 @@ export default function Home({navigation}){
                     <Image source={require('../Imagens/mensais.png' ) } 
                     style={estilos.logoReturnmensais}></Image> 
                     <TouchableOpacity 
-                        onPress = {() => navigation.navigate('')}
+                        onPress = {() => navigation.navigate('Mensal')}
                         style={estilos.bottonMensais}
                         activeOpacity={0.5}>
                         <Text style={estilos.mensais}>Mensais</Text>

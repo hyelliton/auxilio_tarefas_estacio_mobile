@@ -5,7 +5,7 @@ import Checkbox from 'expo-checkbox';
 import estilos from './style';
 import styles from './style';
 
-export default function Diarias({navigation}){
+export default function Semanais({navigation}){
   const [isChecked, setChecked] = useState(false);
   const [isChecked2, setChecked2] = useState(false);
   const [isChecked3, setChecked3] = useState(false);
@@ -25,27 +25,27 @@ export default function Diarias({navigation}){
           <TouchableOpacity 
             onPress = {() => navigation.navigate('')}
             activeOpacity={0.5}>
-            <Text style={estilos.bottondata}>SEG 24/04/2023</Text>
+            <Text style={estilos.bottondata}>SEG - SEX 24/04 - 28/04 2023  </Text>
           </TouchableOpacity>
 
           <View style={estilos.item_check}>
             <Checkbox style={estilos.checkbox}value={isChecked} onValueChange={setChecked} />
-            <Text style={estilos.inputamanhoplace}>Retenção</Text>
+            <Text style={estilos.inputamanhoplace}>Gestão Realizar Reuniões GDO</Text>
           </View>
           
           <View style={estilos.item_check}>
             <Checkbox style={estilos.checkbox} value={isChecked2} onValueChange={setChecked2} />
-            <Text style={estilos.inputamanhoplace} >Qualidade de Ensino</Text>
+            <Text style={estilos.inputamanhoplace}>Gestão Realizar Reuniões GDA</Text>
           </View>
 
           <View style={estilos.item_check}>
             <Checkbox style={estilos.checkbox} value={isChecked3} onValueChange={setChecked3} />
-            <Text style={estilos.inputamanhoplace} >Captação Acompanha o Funil de captação</Text>
+            <Text style={estilos.inputamanhoplace}>Engajamento Realizar tratamento</Text>
           </View>
 
           <View style={estilos.item_check}>
             <Checkbox style={estilos.checkbox} value={isChecked4} onValueChange={setChecked4} />
-            <Text style={estilos.inputamanhoplace} >Captação Realizar Reunião da Equipe</Text>
+            <Text style={estilos.inputamanhoplace}>Captação Realizar Reunião da Equipe</Text>
           </View>
 
           <View style={estilos.boxVoltar}>
