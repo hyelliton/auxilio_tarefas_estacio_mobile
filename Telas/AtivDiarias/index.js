@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import {View, Text, Image, StyleSheet, Button, TextInput, TouchableOpacity,} from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient';
 import Checkbox from 'expo-checkbox'; 
-import { color } from 'react-native-reanimated';
 import estilos from './style';
 import styles from './style';
 
