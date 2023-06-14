@@ -21,7 +21,7 @@ export default function Home({navigation}){
             <View style={estilos.janela}>
 
                 <TouchableOpacity 
-                        onPress = {() => navigation.navigate('')}
+                        onPress = {() => navigation.navigate('Diarias')}
                         style={estilos.bottonDiarias}
                         activeOpacity={0.5}>
 
