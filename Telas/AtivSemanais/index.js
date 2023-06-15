@@ -3,7 +3,6 @@ import {View, Text, Image, StyleSheet, Button, TextInput, TouchableOpacity,} fro
 import { LinearGradient } from 'expo-linear-gradient';
 import Checkbox from 'expo-checkbox'; 
 import estilos from './style';
-import styles from './style';
 
 export default function Semanais({navigation}){
   const [isChecked, setChecked] = useState(false);

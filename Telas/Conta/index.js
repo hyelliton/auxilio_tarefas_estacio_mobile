@@ -22,40 +22,35 @@ export default function Home({navigation}){
 
                 <TouchableOpacity 
                         onPress = {() => navigation.navigate('Diarias')}
-                        style={estilos.bottonDiarias}
                         activeOpacity={0.5}>
-
                     <View style={estilos.bordaDiaria}>
                         <Image source={require('../Imagens/diarias.png' ) } 
                         style={estilos.logoReturndiaria}></Image>
-                        
                         <Text style={estilos.diarias}>Diarias</Text>
-                        
                     </View>
                 </TouchableOpacity>
 
-                <View style={estilos.bordaSemanal}>
-                     <Image source={require('../Imagens/semanais.png' ) } 
-                        style={estilos.logoReturnsemanais}></Image>
-                    <TouchableOpacity 
+                <TouchableOpacity 
                         onPress = {() => navigation.navigate('Semanais')}
                         style={estilos.bottonSemanais}
                         activeOpacity={0.5}>
+                    <View style={estilos.bordaSemanal}>
+                        <Image source={require('../Imagens/semanais.png' ) } 
+                        style={estilos.logoReturnsemanais}></Image>
                         <Text style={estilos.semanais}>Semanais</Text>
-                    </TouchableOpacity>
-                    
-                </View>
+                    </View>
+                </TouchableOpacity>
 
-                <View style={estilos.bordaMensal}>
-                    <Image source={require('../Imagens/mensais.png' ) } 
-                    style={estilos.logoReturnmensais}></Image> 
-                    <TouchableOpacity 
-                        onPress = {() => navigation.navigate('Mensal')}
-                        style={estilos.bottonMensais}
-                        activeOpacity={0.5}>
-                        <Text style={estilos.mensais}>Mensais</Text>
-                    </TouchableOpacity>
-                </View>
+                <TouchableOpacity 
+                    onPress = {() => navigation.navigate('Mensal')}
+                    style={estilos.bottonMensais}
+                    activeOpacity={0.5}>
+                    <View style={estilos.bordaMensal}>
+                        <Image source={require('../Imagens/mensais.png' ) } 
+                        style={estilos.logoReturnmensais}></Image>
+                        <Text style={estilos.mensais}>Mensais</Text> 
+                    </View>
+                </TouchableOpacity>
 
                 <View style={estilos.botao}>
                 <Button title="< 2023 >" color= '#B0C4DE'onPress={()=>navigation.navigate('')} />

@@ -47,16 +47,16 @@ export default function Relatoriorealizado({navigation}){
         </View>
 
 
-        <View style={styles.container}>
-      <View style={styles.checkboxContainer}>
-        <Checkbox style={styles.checkbox} value={isChecked} onValueChange={setChecked} />
+        <View style={estilos.container}>
+      <View style={estilos.checkboxContainer}>
+        <Checkbox style={estilos.checkbox} value={isChecked} onValueChange={setChecked} />
         
 
       
       </View>
 
-      <View style={styles.checkboxContainer}>
-        <Checkbox style={styles.checkbox2} value={isChecked} onValueChange={setChecked} />
+      <View style={estilos.checkboxContainer}>
+        <Checkbox style={estilos.checkbox2} value={isChecked} onValueChange={setChecked} />
         
 
       

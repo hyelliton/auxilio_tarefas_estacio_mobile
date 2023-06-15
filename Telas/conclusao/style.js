@@ -1,91 +1,88 @@
 import { StyleSheet } from "react-native";
 const estilos = StyleSheet.create({
 
-    fundo: {
-      flex: 1,
-    },
-  
-    logo:{
-      resizeMode: 'contain',
-      marginTop: 12,
-      marginLeft: 49,
-      width: 230,
-    },
-  
-    espaco:{
-      marginTop: 'auto',
-    },
-  
-    titulo1:{
-      margin: 8,
-      marginTop: 17,
-      marginLeft: 20,
-      width: 175,
-      height: 55,
-      left: 5,
-      fontSize: 30,
-      color: 'black',
-      top:-40
-    },
-  
-    titulo2:{
-      marginVertical: 5,
-      marginTop: -12,
-      marginLeft: 20,
-      width: 250,
-      height: 55,
-      fontSize: 26,
-      color: 'white',
-      right:-4,
-      top:-55
-    },
-  
-    item_visto:{
-      
-      marginHorizontal: 25,
-      height: 80,
-      marginLeft: 20,
-      marginTop: 20
-    },
-    conclusaovisualizada: {
-      
-      backgroundColor: '#F4F3F3',
-      width: '100%',
-      height:220,
-      padding: 8,
-      borderRadius: 50,
-      marginTop:-45
-    },
+  fundo: {
+    flex: 1,
+  },
+
+  logo:{
+    resizeMode: 'contain',
+    marginTop: 12,
+    marginLeft: 49,
+    width: 230,
+  },
+
+  espaco:{
+    marginTop: 'auto',
+  },
+
+  titulo1:{
+    margin: 8,
+    marginTop: 17,
+    marginLeft: 20,
+    width: 175,
+    height: 55,
+    left: 5,
+    fontSize: 30,
+    color: 'black',
+    top:-40
+  },
+
+  titulo2:{
+    marginVertical: 5,
+    marginTop: -12,
+    marginLeft: 20,
+    width: 250,
+    height: 55,
+    fontSize: 26,
+    color: 'white',
+    right:-4,
+    top:-55
+  },
+
+  item_visto:{
     
-    janela:{
-      flex: 1,
-      backgroundColor: 'white',
-      borderTopLeftRadius: 40,
-      borderTopRightRadius: 40,
-      width: '100%',
-      textAlign: 'center',
-      justifyContent: 'center',
-      border:'solid',
-      color:'white',
-      bordeRadios:12,
-      marginTop:-50,
-    },
+    marginHorizontal: 25,
+    height: 80,
+    marginLeft: 20,
+    marginTop: '20%'
+  },
+  conclusaovisualizada: {
+    
+    backgroundColor: '#F4F3F3',
+    width: '100%',
+    height:220,
+    padding: 8,
+    borderRadius: 50,
+    marginTop:-45
+  },
+  
+  janela:{
+    flex: 1,
+    backgroundColor: 'white',
+    borderTopLeftRadius: 40,
+    borderTopRightRadius: 40,
+    width: '100%',
+    textAlign: 'center',
+    justifyContent: 'center',
+    border:'solid',
+    color:'white',
+    bordeRadios:12,
+    marginTop:-50,
+  },
   
   email:{
   
-      marginHorizontal:30,
-      height: 85,
-      marginLeft:100,
-      marginTop:50,
-      top:65,
-      fontSize:18,
-      left:-50,
-      fontWeight: 'bold'
-    
+  height: '30%',
+  marginLeft:100,
+  marginTop:50,
+  top:65,
+  fontSize:18,
+  left:-50,
+  fontWeight: 'bold'
+  },
   
-    },
-  
-    inputemail:{
+  inputemail:{
       flexDirection:'row',
       backgroundColor:'#F4F3F3',
       width:'80%',

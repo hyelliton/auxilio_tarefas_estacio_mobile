@@ -7,7 +7,7 @@ const estilos = StyleSheet.create({
         borderRadius: 8,
         borderWidth: 2,
         padding: 10,
-        margin: 40,
+        margin: 30,
         height: 50,
         width: '80%',
         borderColor: '#9FB9FC',
@@ -15,37 +15,34 @@ const estilos = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         flexDirection:'row',
+        marginLeft: '80%',
+        marginRight: '80%'
     },
 
     bordaSemanal:{
         borderRadius: 8,
         borderWidth: 2,
         padding: 10,
-        margin: 38,
         height: 50,
         width: '80%',
         borderColor: '#9FB9FC',
-        marginTop: 10,
+        marginTop: 5,
         alignItems: 'center',
         justifyContent: 'center',
         flexDirection:'row',
-        
     },
     
     bordaMensal:{
-
         borderRadius: 8,
         borderWidth: 2,
         padding: 10,
-        margin: 38,
         height: 50,
         width: '80%',
         borderColor: '#9FB9FC',
-        marginTop: -10,
+        marginTop: 30,
         alignItems: 'center',
         justifyContent: 'center',
         flexDirection:'row',
-        
     },
 
     fundo: {
@@ -95,36 +92,24 @@ const estilos = StyleSheet.create({
     },
 
     diarias:{
-        // marginHorizontal: '10%',
-        // marginLeft: 80,
-        // right: '1%',
-        // bottom:'100%',
+        right: '80%',
         fontSize: 15,
         textAlign: 'center',
         color: 'black',
-        
     },
 
     semanais:{
-        // marginHorizontal: '10%',
-        // marginLeft: 80,
-        // right: '1%',
-        // bottom: -20,
+        right: '80%',
         fontSize: 15,
         textAlign: 'center',
         color: 'black',
-        
     },
 
     mensais:{
-        // marginHorizontal: '10%',
-        // marginLeft: 80,
-        // right: '1%',
-        //bottom: -70,
+        right: '80%',
         fontSize: 15,
         textAlign: 'center',
         color: 'black',
-        
     },
 
     botao:{
@@ -146,28 +131,19 @@ const estilos = StyleSheet.create({
     },
 
     logoReturndiaria:{
-        // resizeMode: 'contain',
-        // alignSelf: 'center',
-        // height: 30,
-        right: '220%',
-        //bottom:'23%'
+        right: '150%',
+        marginRight: '20%'
     },
 
     logoReturnsemanais:{
-        
-        // alignSelf: 'center',
-        // resizeMode: 'contain',
-        // height: 30,
-        right: '200%',
-        // bottom:'13%'
+        right: '100%',
+        marginRight: '20%'
     },
 
     logoReturnmensais:{
-        // resizeMode: 'contain',
-        // alignSelf: 'center',
-        // height: 30,
-        right: '210%',
-        // bottom: '4%'
+        right: '100%',
+        marginRight: '20%'
+        
     },
     
 });

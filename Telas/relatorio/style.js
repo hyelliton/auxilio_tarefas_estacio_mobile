@@ -155,13 +155,8 @@ const estilos = StyleSheet.create({
       left:145 ,
       bottom:130,
       top:-10
-      }
+    },
    
-  })
-  
-
-
-  const styles = StyleSheet.create({
     container: {
       flex: 1,
       alignItems: 'center',

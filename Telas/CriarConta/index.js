@@ -34,7 +34,7 @@ export default function CriarConta({navigation}){
             behavior="padding"
             style={{flex: 1}}> 
 
-            <ScrollView style={{flex: 1, marginTop: 50}}>
+            <ScrollView style={{flex: 1, marginTop: 80}}>
               <View style={estilos.item_email}>
                 <Text style={estilos.textEmail}>EMAIL:</Text>
                 <TextInput style={estilos.inputEmail} placeholder={'Digite seu email'}></TextInput>
