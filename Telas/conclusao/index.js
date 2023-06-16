@@ -28,29 +28,18 @@ export default function Conclusao({navigation}){
                 <TextInput style={estilos.conclusaovisualizada} 
                 placeholder={'Atividade:Engajamento participação da reunião de rotina comercial com gerente comercial e força de venda(GDC) '} 
                 ></TextInput>
-
               </View>
 
-              <View>
-                <Text style={estilos.email}>
-                E-Mail
-                </Text>
-                <TextInput style={estilos.inputemail} 
-                placeholder={''} ></TextInput>
+              <View style={estilos.item_visto1}>
+                <Text style={estilos.email}>E-Mail</Text>
+                <TextInput style={estilos.inputemail} ></TextInput>
               </View>
                 
               <View style={estilos.botaoconfirmar}>
                 <Button title=" Confirmar" color= '#9FB9FC'
                   onPress={() => navigation.navigate('Home')} />
               </View>
-
-              <TouchableOpacity 
-                onPress = {() => navigation.navigate('')}
-                style={estilos.bottonLogoStyle}
-                activeOpacity={0.5}>
-                <Image source={require('../Imagens/logoReturn2.png' ) } 
-                style={estilos.logoReturn}></Image>
-              </TouchableOpacity>
+              
             </ScrollView>    
           </KeyboardAvoidingView>
         </View>    

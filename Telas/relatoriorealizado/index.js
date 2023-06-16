@@ -11,7 +11,8 @@ export default function Relatoriorealizado({navigation}){
     
       <View style={estilos.fundo}>
         <Image source={require('../Imagens/estacioTransparente.png' )} style={estilos.logo}></Image>
-
+  
+        
             <View style={estilos.janela}>
 
             <TouchableOpacity 
@@ -21,6 +22,8 @@ export default function Relatoriorealizado({navigation}){
                 <Text style={estilos.bottonrealizadas}>REALIZADAS 01/04 a 30/04/2023</Text>
               </View>
             </TouchableOpacity>
+              
+            
           
             <View style={estilos.item_login}>
 

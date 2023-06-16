@@ -156,15 +156,12 @@ const estilos = StyleSheet.create({
     },
     
     botao:{
-  
       marginTop: 10,
       marginLeft: 140,
       width: 90,
       height: 150,
       fontSize: 7,
       justifyContent: 'space-between',
-      
-      
     },
    
 });

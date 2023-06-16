@@ -77,14 +77,13 @@ const estilos = StyleSheet.create({
         borderRadius: 50,
     },
 
-    logoReturn:{
-        width: '100%',
-        resizeMode: 'contain',
-        alignSelf: 'center',
-        height: 30,
-        right: '-3%',
-        bottom: '-272%'
-    }
-  
+    botao:{
+        marginTop: 15,
+        marginLeft: 140,
+        width: 90,
+        fontSize: 7,
+        
+    },
 });
+
 export default estilos

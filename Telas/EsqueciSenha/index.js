@@ -14,7 +14,7 @@ export default function Recupere({navigation}){
 
             <View style={estilos.espaco}>
                 <Text style={estilos.titulo1}>Recupere</Text>
-                <Text style={estilos.titulo2}>Sua senha!</Text>
+                <Text style={estilos.titulo2}> Sua senha!</Text>
             </View>
                 
             <View style={estilos.janela}>
@@ -40,13 +40,10 @@ export default function Recupere({navigation}){
                             placeholder={'Digite seu email'} ></TextInput>
                         </View>
                         
-                        <TouchableOpacity 
-                            onPress = {() => navigation.navigate('cadastroDeConta')}
-                            style={estilos.bottonLogoStyle}
-                            activeOpacity={0.5}>
-                        <Image source={require('../Imagens/logoReturn2.png' ) } 
-                        style={estilos.  logoReturn}></Image>
-                        </TouchableOpacity>
+                        <View style={estilos.botao}>
+                            <Button title="ENVIAR" color= '#9FB9FC' onPress={() => navigation.navigate('FazerLogin')} />
+                        </View> 
+
                     </ScrollView>
                 </KeyboardAvoidingView>
             </View>
